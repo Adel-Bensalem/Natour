@@ -1,0 +1,23 @@
+
+@mixin translationY($y) {
+  transform: translateY($y * 1rem);
+}
+
+@mixin translationX($x) {
+  transform: translateX($x * 1rem);
+}
+
+@mixin absolute-position($top, $left) {
+  position: absolute;
+  top: $top * 1%;
+  left: $left * 1%;
+  transform: translate($top * -1%, $left * -1%);
+}
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

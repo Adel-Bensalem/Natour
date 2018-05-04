@@ -1,0 +1,35 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: .6rem;
+
+  &-track {
+    border-radius: 100rem;
+    background-color: $color-white;
+  }
+
+  &-thumb {
+    border-radius: 100rem;
+    background-color: lighten($color-grey-dark, 35%);
+  }
+
+  &-thumb:hover {
+    background-color: lighten($color-grey-dark, 30%);
+  }
+}

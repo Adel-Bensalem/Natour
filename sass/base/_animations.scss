@@ -1,0 +1,54 @@
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    @include translationY(3);
+  }
+
+  100% {
+    opacity: 1;
+    @include translationY(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    @include translationX(10);
+  }
+
+  80% {
+    @include translationX(-1);
+  }
+
+  100% {
+    opacity: 1;
+    @include translationX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    @include translationX(-10);
+  }
+
+  80% {
+    @include translationX(1);
+  }
+
+  100% {
+    opacity: 1;
+    @include translationX(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0turn);
+  }
+
+  100% {
+    transform: rotate(-1turn);
+  }
+}
